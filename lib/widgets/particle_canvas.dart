@@ -106,7 +106,7 @@ class _ParticlePainter extends CustomPainter {
 
     final glowPaint = Paint()
       ..color = p.color.withAlpha(51)
-      ..maskFilter = const MaskFilter.blur(BlurStyle.normal, p.size * 0.5);
+      ..maskFilter = MaskFilter.blur(BlurStyle.normal, p.size * 0.5);
 
     canvas.drawCircle(Offset.zero, p.size * 1.5, glowPaint);
 
