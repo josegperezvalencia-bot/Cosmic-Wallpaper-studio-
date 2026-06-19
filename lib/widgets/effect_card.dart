@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/effect_type.dart';
+import '../models/premium_feature.dart';
 import '../utils/constants.dart';
 import '../providers/premium_provider.dart';
 import 'package:provider/provider.dart';
