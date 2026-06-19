@@ -233,7 +233,7 @@ class HUDDialog extends StatelessWidget {
       builder: (context) => HUDDialog(
         title: title,
         content: content,
-        actions: actions,
+        actions: actions ?? [],
       ),
     );
   }
