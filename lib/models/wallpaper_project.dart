@@ -31,7 +31,7 @@ class WallpaperProject {
         'activeEffects':
             activeEffects.map((e) => e.name).toList(),
         'parallaxSensitivity': parallaxSensitivity,
-        'backgroundColor': backgroundColor.toARGB32(),
+        'backgroundColor': backgroundColor.value,
         'createdAt': createdAt.toIso8601String(),
         'modifiedAt': modifiedAt.toIso8601String(),
       };
