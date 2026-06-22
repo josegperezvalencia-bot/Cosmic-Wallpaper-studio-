@@ -15,7 +15,6 @@ import '../models/premium_feature.dart';
 import '../utils/constants.dart';
 import 'preview_screen.dart';
 import 'ai_generator_screen.dart';
-import 'effects_screen.dart';
 import 'gallery_screen.dart';
 import 'settings_screen.dart';
 import 'premium_screen.dart';
@@ -245,7 +244,7 @@ class _CreatorTab extends StatelessWidget {
                                     image:
                                         AssetImage(layer.imagePath),
                                     fit: BoxFit.contain,
-                                    onError: (_, __) {},
+                                    errorBuilder: (_, __, ___) => const SizedBox(),
                                   ),
                                 ),
                               ),

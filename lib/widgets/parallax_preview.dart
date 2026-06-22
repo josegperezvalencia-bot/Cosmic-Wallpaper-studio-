@@ -88,7 +88,7 @@ class LayerPreview extends StatelessWidget {
                 image: DecorationImage(
                   image: AssetImage(imagePath),
                   fit: BoxFit.contain,
-                  onError: (_, __) {},
+                  errorBuilder: (_, __, ___) => const SizedBox(),
                 ),
               ),
             ),

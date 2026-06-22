@@ -109,7 +109,7 @@ class _PreviewScreenState extends State<PreviewScreen>
                           image: DecorationImage(
                             image: AssetImage(layer.imagePath),
                             fit: BoxFit.contain,
-                            onError: (_, __) {},
+                            errorBuilder: (_, __, ___) => const SizedBox(),
                           ),
                         ),
                       ),
